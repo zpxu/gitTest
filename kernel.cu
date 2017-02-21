@@ -17,7 +17,7 @@ int main()
 {
     const int arraySize = 5;
     const int a[arraySize] = { 1, 2, 3, 4, 5 };
-    const int b[arraySize] = { 15, 22, 34, 49, 51 };
+    const int b[arraySize] = { 13, 22, 34, 49, 51 };
     int c[arraySize] = { 0 };
 
     // Add vectors in parallel.
@@ -27,7 +27,7 @@ int main()
         return 1;
     }
 
-    printf("{1,2,3,4,5} + {15,22,34,49,51} = {%d,%d,%d,%d,%d}\n",
+    printf("{1,2,3,4,5} + {13,22,34,49,51} = {%d,%d,%d,%d,%d}\n",
         c[0], c[1], c[2], c[3], c[4]);
 
     // cudaDeviceReset must be called before exiting in order for profiling and
